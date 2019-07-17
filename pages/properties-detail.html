@@ -1,0 +1,50 @@
+
+
+    <!-- menu details -->
+    <div class="menu-details segments-page">
+        <div class="container">
+            <div ng-repeat="gal in detail.gallery">
+                <div id="tabs{{gal.id}}" >
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="content">
+                                <img src="http://127.0.0.1:8000/storage/property/gallery/{{gal.name}}" alt="menu">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-mb">
+                <div class="col s12">
+                    <ul class="tabs" >
+                        <li class="tab col s4" ng-repeat="gal in detail.gallery">
+                            <a class="active" href="#tabs{{gal.id}}">
+                                <img src="http://127.0.0.1:8000/storage/property/gallery/{{gal.name}}" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-desc">
+                <span>{{detail.category.category_name}}</span>
+                <h5>{{detail.title}}</h5>
+                <h4>{{detail.monthly_price}}</h4>
+                <p>{{detail.description}}</p>
+                <hr>
+                
+                <button class="button"><i class="fa fa-whatsapp">  {{detail.user.phone}}</i></button>
+            </div>
+            <div class="comment-add">
+                <h5>Leave Your Reply</h5>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea cols="30" rows="10" placeholder="Message"></textarea>
+                    <button class="button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- end menu details -->
+

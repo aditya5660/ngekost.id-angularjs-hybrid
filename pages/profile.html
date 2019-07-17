@@ -1,0 +1,97 @@
+<div ng-controller="ProfileController">
+    <!-- profile -->
+    <div class="profile segments-page">
+        <div class="profile-banner">
+            <div class="content-image">
+                <div class="content">
+                    <img src="http://127.0.0.1:8000/storage/users/{{profile.image}}" alt="">
+                </div>
+                <h4>{{name}}</h4>
+            </div>
+            <div class="link-edit-profile">
+                <a href="edit-profile.html">
+                    <h6><i class="fa fa-edit"></i>Edit Profile</h6>
+                </a>
+            </div>
+        </div>
+        {{msg}}
+        <div class="container">
+                <form>
+                        <div class="content-text">
+                            <input type="hidden" ng-model="id" >
+                            <div class="row">
+                                <div class="col s4">
+                                    <div class="content">
+                                        <h6>Username</h6>
+                                    </div>
+                                </div>
+
+                                <div class="col s8">
+                                    <div class="content-right">
+                                        <input type="text"  ng-model="username" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s4">
+                                    <div class="content">
+                                        <h6>Name</h6>
+                                    </div>
+                                </div>
+                                <div class="col s8">
+                                    <div class="content-right">
+                                        <input type="text"  ng-model="name">
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="row">
+                                <div class="col s4">
+                                    <div class="content">
+                                        <h6>Email</h6>
+                                    </div>
+                                </div>
+                                <div class="col s8">
+                                    <div class="content-right">
+                                        <input type="text"  ng-model="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s4">
+                                    <div class="content">
+                                        <h6>Phone</h6>
+                                    </div>
+                                </div>
+                                <div class="col s8">
+                                    <div class="content-right">
+                                        <input type="text"  ng-model="phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s4">
+                                    <div class="content">
+                                        <h6>Bio</h6>
+                                    </div>
+                                </div>
+                                <div class="col s8">
+                                    <div class="content-right no-bb-pb">
+                                        <textarea cols="30" rows="10" ng-model="about"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button-save">
+                                <input type="submit"style="color: #00a6ff" class="button" value="Save" ng-click="postdata(id,name, username, email, phone, about)"/>
+                                
+                            </div>
+                        </div>
+                    </form>
+                    <br>
+                    <br>
+                    <br>
+        </div>
+    </div>
+    <!-- end profile -->
+
+</div>

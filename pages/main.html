@@ -1,0 +1,180 @@
+<div ng-controller="MainController" >
+    <!-- category -->
+    <div class="category ">
+        <div class="section-title " >
+            <h3>Category 
+            </h3>
+        </div>
+        <wrap-owlcarousel class="category-show segments owl-carousel" data-options="{autoPlay: 5000, stopOnHover: true, slideSpeed : 300, paginationSpeed : 400 }" style="width: 100%;" ng-repeat="x in categories">
+            <a href="#propertiesbycategory/{{x.id}}">
+                <div class="content c-first" style="padding-right: 20px;" >
+                    <div class="mask"></div>
+                    <h4>{{ x.category_name }}</h4>
+                </div>
+            </a>   
+
+            
+        </wrap-owlcarousel>
+    </div>
+
+
+        <!-- restaurant home -->
+        <div class="restaurant segments" style="margin-top:10px">
+                <div class="section-title">
+                    <h3>Recent Properties
+                        <a href="http://astylers.com/restaurant/" class="see-all-link">See All</a>
+                    </h3>
+                </div>
+                <wrap-owlcarousel class="category-show segments owl-carousel" data-options="{autoPlay: 5000, stopOnHover: true, slideSpeed : 300, paginationSpeed : 400 }" style="width: 100%;" ng-repeat="p in properties">
+                    <div class="content" >
+                        <img src="http://127.0.0.1:8000/storage/property/{{p.image }}" alt="">
+                        <div class="text">
+                            <a href="http://astylers.com/restaurant-single/">
+                                <h4>{{ p.title }}</h4>
+                            </a>
+                            <span><i class="fa fa-map-pin"></i>{{ p.address}}</span>
+                        </div>
+                    </div>
+                </wrap-owlcarousel >
+            </div>
+            <!-- end restaurant home -->
+    <div class="container">
+
+        <div class="slide">
+            <div class="section-title">
+                <h3>Our Promotion
+                    <a href="http://astylers.com/restaurant/" class="see-all-link">See All</a>
+                </h3>
+            </div>
+            <div class="slide-show owl-carousel owl-theme">
+                <div class="content">
+                    <div class="mask"></div>
+                    <img ng-src="assets/images/slider1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="mask"></div>
+                    <img src="assets/images/slider2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="mask"></div>
+                    <img src="assets/images/slider3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- emd promotion -->
+    <!-- restaurant home -->
+    <div class="restaurant-home segments" style="margin-top:10px">
+        <div class="section-title">
+            <h3>Recent Properties
+                <a href="http://astylers.com/restaurant/" class="see-all-link">See All</a>
+            </h3>
+        </div>
+        <div class="category-show owl-carousel owl-theme">
+            <div class="content">
+                <img src="assets/images/restaurant2.jpg" alt="">
+                <div class="text">
+                    <a href="http://astylers.com/restaurant-single/">
+                        <h4>ABCD Restaurant</h4>
+                    </a>
+                    <span><i class="fa fa-map-pin"></i>Los Angeles, California</span>
+                </div>
+            </div>
+            <div class="content">
+                <img src="assets/images/restaurant1.jpg" alt="">
+                <div class="text">
+                    <a href="http://astylers.com/restaurant-single/">
+                        <h4>Special Night Cafe</h4>
+                    </a>
+                    <span><i class="fa fa-map-pin"></i>Tokyo 87, Tokyo</span>
+                </div>
+            </div>
+            <div class="content">
+                <img src="assets/images/restaurant3.jpg" alt="">
+                <div class="text">
+                    <a href="http://astylers.com/restaurant-single/">
+                        <h4>Yumy de Resto</h4>
+                    </a>
+                    <span><i class="fa fa-map-pin"></i>Rio de Janeiro, Brazil</span>
+                </div>
+            </div>
+            <div class="content">
+                <img src="assets/images/restaurant4.jpg" alt="">
+                <div class="text">
+                    <a href="http://astylers.com/restaurant-single/">
+                        <h4>Night The Resto</h4>
+                    </a>
+                    <span><i class="fa fa-map-pin"></i>Tokyo 87, Tokyo</span>
+                </div>
+            </div>
+            <div class="content">
+                <img src="assets/images/restaurant2.jpg" alt="">
+                <div class="text">
+                    <a href="http://astylers.com/restaurant-single/">
+                        <h4>Chicken Restaurant</h4>
+                    </a>
+                    <span><i class="fa fa-map-pin"></i>Barcelona, Spain</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end restaurant home -->
+
+    <!-- restaurant home -->
+    <div class="restaurant-home menuku segments bg-second" style="margin-bottom: 60px;">
+        <div class="section-title">
+            <h3>Recent News
+                <a href="http://astylers.com/restaurant/" class="see-all-link">See All</a>
+            </h3>
+        </div>
+        <div class="category-show owl-carousel owl-theme">
+            <div class="content">
+                <img src="assets/images/restaurant2.jpg" alt="">
+                <div class="text">
+                    <a href="http://astylers.com/restaurant-single/">
+                        <h4>ABCD Restaurant</h4>
+                    </a>
+                    <span><i class="fa fa-map-pin"></i>Los Angeles, California</span>
+                </div>
+            </div>
+            <div class="content">
+                <img src="assets/images/restaurant1.jpg" alt="">
+                <div class="text">
+                    <a href="http://astylers.com/restaurant-single/">
+                        <h4>Special Night Cafe</h4>
+                    </a>
+                    <span><i class="fa fa-map-pin"></i>Tokyo 87, Tokyo</span>
+                </div>
+            </div>
+            <div class="content">
+                <img src="assets/images/restaurant3.jpg" alt="">
+                <div class="text">
+                    <a href="http://astylers.com/restaurant-single/">
+                        <h4>Yumy de Resto</h4>
+                    </a>
+                    <span><i class="fa fa-map-pin"></i>Rio de Janeiro, Brazil</span>
+                </div>
+            </div>
+            <div class="content">
+                <img src="assets/images/restaurant4.jpg" alt="">
+                <div class="text">
+                    <a href="http://astylers.com/restaurant-single/">
+                        <h4>Night The Resto</h4>
+                    </a>
+                    <span><i class="fa fa-map-pin"></i>Tokyo 87, Tokyo</span>
+                </div>
+            </div>
+            <div class="content">
+                <img src="assets/images/restaurant2.jpg" alt="">
+                <div class="text">
+                    <a href="http://astylers.com/restaurant-single/">
+                        <h4>Chicken Restaurant</h4>
+                    </a>
+                    <span><i class="fa fa-map-pin"></i>Barcelona, Spain</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end restaurant home -->
+
+</div>

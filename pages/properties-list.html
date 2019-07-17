@@ -1,0 +1,28 @@
+<div ng-controller="PropertiesController">
+        <!-- menu list -->
+        <div class="menu menu-list segments-page">
+            <div class="container">
+                <div class="section-title">
+                    <h3>Property List</h3>
+                </div>
+                <div id="tabs1">
+                    <div class="col s12" ng-repeat="x in properties">
+                        <a href="#property/{{x.id}}">
+                            <div class="content" >
+                                <img src="http://127.0.0.1:8000/storage/property/{{x.image}}" alt="menu">
+                                <div class="text">
+                                <h6 >{{ x.title }}</h6>
+                                    <p class="price">{{ x.monthly_price}}</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end menu list -->
+    
+
+</div>
+
+

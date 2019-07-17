@@ -1,0 +1,28 @@
+<div ng-controller="PropertiesController">
+        <!-- menu list -->
+        <div class="menu menu-list segments-page">
+            <div class="container">
+                <div class="section-title">
+                    <h3>News List</h3>
+                </div>
+                <div id="tabs1">
+                    <div class="col s12" ng-repeat="x in articles">
+                        <a href="{{x.url}}">
+                            <div class="content" >
+                                <img src="{{x.urlToImage}}" alt="{{ x.title }}">
+                                <div class="text">
+                                <h6 >{{ x.title }}</h6>
+                                    <p class="price">{{ x.source.name }} - {{ x.author}}</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end menu list -->
+    
+
+</div>
+
+

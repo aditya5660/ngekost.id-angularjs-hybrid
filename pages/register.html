@@ -1,0 +1,32 @@
+
+	<!-- register -->
+	<div class="register segments-page" ng-controller="RegisterController">
+		<div class="container">
+            <div class="logos">
+                <div class="image">
+                    <img src="images/logo-blue.png" width="150px" alt="">
+                </div>
+            </div>
+    		<div class="content" style="margin-top:20px">
+    			<form>
+    				<input type="text" ng-model="name" placeholder="Full Name">
+    				<input type="text" ng-model="username" placeholder="Username">
+    				<input type="email" ng-model="email" placeholder="Email">
+    				<input type="text" ng-model="phone" placeholder="Phone">
+    				<input type="password" ng-model="password" placeholder="password">
+    				<input type="password" ng-model="confirmpassword" placeholder="Retype Password">
+                    <div class="info">
+						{{msg}}
+                        <ul>
+                            <li>
+                                Have an account?
+                                <a href="login.html">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+    				<input class="button" style="color: #00a6ff" type="button" value="Register" ng-click="postdata(name, username, email, phone, password, confirm-password)"/>
+    			</form>
+    		</div>
+		</div>
+	</div>
+	<!-- end register -->
